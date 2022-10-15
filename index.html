@@ -12,20 +12,154 @@
       rel="stylesheet"
     />
 
-    <link href="style.css" rel="stylesheet" />
+    <link href="./CSS/style.css" rel="stylesheet" />
+    <link href="./CSS/general.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/13caf789a9.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="header">
+    <!------------ Header----------->
+
+    <header class="header" id="home">
       <div class="main-page">
-        <h4 class="intro">Hi, I'm<span class="name"> Yamini</span></h4>
+        <h4 class="intro">Hi, I'm <span class="name">Yamini</span></h4>
         <h4 class="profession">
           Ex Associate Professional Software Engineer at DXC technology
         </h4>
-        <button class="button-view">View my work &rarr;</button>
+        <div class="view">
+          <a href="#view" class="link"> View my work</a>
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </div>
       </div>
     </header>
-    <section class="aboutme-section">
-      <h4>About me</h4>
-    </section>
+
+    <!------------Aboutme section----------->
+
+    <section class="aboutme-section" id="view">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-list">Home</a></li>
+          <li><a href="#view" class="nav-list">About</a></li>
+          <li><a href="#services" class="nav-list">Services</a></li>
+          <li><a href="#portfolio" class="nav-list">Portfolio</a></li>
+          <li><a href="#" class="nav-list">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="aboutme">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="img/user.png" alt="user image" />
+            </div>
+            <div class="about-col-2">
+              <h5>About me</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                odit recusandae laborum illum earum quod eius, itaque, error sit
+                debitis, consequuntur fuga temporibus. Magni laudantium autem
+                recusandae laboriosam culpa officiis?Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Quos, tempore iure, praesentium
+                reiciendis velit alias culpa quas ducimus eligendi blanditiis
+                quia laudantium neque esse molestiae unde error. Ipsum, numquam
+                quis?
+              </p>
+                <div class="tab-titles">
+                  <p class="tab-links active-link" data-tab="1">Skills</p>
+                  <p class="tab-links" data-tab="2">Experience</p>
+                  <p class="tab-links" data-tab="3">Education</p>
+                </div>
+                <div class="tab-contents active__content--1 active-tab">
+                  <ul>
+                    <li>VMWare ESXI</li>
+                    <li>Microsoft Azure</li>
+                    <li>VMware vSphere</li>
+                    <li>Javascript</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>ServiceNow</li>
+                    <li>PagerDuty</li>
+                    <li>GitHub</li>
+                  </ul>
+                </div>
+                <div class="tab-contents active__content--2">
+                  <p>
+                    Associate Professional Software engineer <br />DXC
+                    Technology,Chennnai
+                  </p>
+                  <span class="year">Jan 2021 - Jun 2022</span>
+                </div>
+                <div class="tab-contents active__content--3">
+                  <p>
+                    BE in Computer Science and Engineering
+                    <br />Madras Institute of Technology,chennai.
+                  </p>
+                  <span class="year">2016 - 2020</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!------------Services section----------->
+
+    <div id="services">
+      <div class="container">
+        <h5>My Services</h5>
+        <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, accusamus impedit sit error at obcaecati amet ea doloribus culpa, tempora veniam iusto doloremque quos libero aliquam ullam nobis placeat quia.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>UI/UX Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, accusamus impedit sit error at obcaecati amet ea doloribus culpa, tempora veniam iusto doloremque quos libero aliquam ullam nobis placeat quia.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-app-store"></i>
+              <h2>App Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, accusamus impedit sit error at obcaecati amet ea doloribus culpa, tempora veniam iusto doloremque quos libero aliquam ullam nobis placeat quia.</p>
+              <a href="#">Learn more</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------Portfolio section----------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h5>My Work</h5>
+
+      </div>
+    </div>
+
+
+
+    <!------------Contact section----------->
+   <!-- <div class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h4>Contact Me</h4>
+          <p>contact@gmail.com</p>
+          <p>0123456789</p>
+        </div>
+        <div class="contact-right"></div>
+      </div>
+    </div>
+   </div> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
   </body>
 </html>
