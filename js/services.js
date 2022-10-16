@@ -1,0 +1,21 @@
+import { applicantInformation } from "./applicantInformation.js";
+const serviceList = document.getElementById("services-list");
+applicantInformation["myServices"].forEach((element) => {
+  const div = document.createElement("div");
+  const i = document.createElement("i");
+  i.setAttribute("class", element.iconName);
+  div.appendChild(i);
+  const h2 = document.createElement("h2");
+  h2.innerHTML = element.name;
+  div.appendChild(h2);
+  const para = document.createElement("p");
+  para.innerText = element.description;
+  div.appendChild(para);
+  const a = document.createElement("a");
+  const link = document.createTextNode("Learn more");
+  a.appendChild(link);
+  a.title = "Learn more";
+  a.href = "#";
+  div.appendChild(a);
+  serviceList.appendChild(div);
+});
