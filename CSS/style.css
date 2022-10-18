@@ -9,27 +9,22 @@
 }
 
 .view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  font-size: 2rem;
-  padding: 1rem;
-  border-radius: 1rem;
-
-  background-color: #2d2b2b;
+  display: inline-block;
+  background: #2d2b2b;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: #fff;
   border: 2px solid #fff;
-  transition: background-color 1s;
+  padding: 10px 20px;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .view:hover {
   background-color: #000;
-  transform: scale(1.05);
-}
-
-.link {
-  color: #fff;
-  text-decoration: none;
+  transform: scale(1.1);
 }
 
 .intro {
@@ -39,8 +34,9 @@
 
 .profession {
   font-size: 3.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #fff;
+  justify-items: center;
 }
 
 .name {
@@ -67,17 +63,17 @@
 /* Navigation */
 /******************************/
 
-.nav-list {
-  padding: 0.7rem;
+.nav-links {
+  padding: 1.5rem;
   list-style: none;
   display: flex;
   align-items: center;
   gap: 3.2rem;
-  background-color: #272736;
+  background-color: #2d2b2b;
 }
 
-.nav-list:link,
-.nav-list:visited {
+.nav-link:link,
+.nav-link:visited {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -86,8 +82,8 @@
   transition: all 0.3s;
 }
 
-.nav-list:hover,
-.nav-list:active {
+.nav-link:hover,
+.nav-link:active {
   color: #ff004f;
 }
 
@@ -309,3 +305,83 @@
 /******************************/
 /* Contact-section */
 /******************************/
+
+#contact {
+  padding: 3rem;
+}
+
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 3rem;
+}
+
+.contact-left p i {
+  color: #ff004f;
+  margin-right: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.social-icons {
+  margin-top: 3rem;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 3rem;
+  margin-right: 1.5rem;
+  color: #ff6695;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.social-icons a:hover {
+  color: #b30037;
+  transform: translateY(-5px);
+}
+
+.btn2 {
+  display: inline-block;
+  background: #ff004f;
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #ffe6ed;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  color: #000;
+  font-size: 1.8rem;
+  border-radius: 0.6rem;
+}
+
+form .btn2 {
+  padding: 1.4rem 6rem;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ff6695;
+}
+
+#msg {
+  color: #800028;
+  margin-top: -4rem;
+  display: block;
+}
