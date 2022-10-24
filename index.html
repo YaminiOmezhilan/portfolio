@@ -25,23 +25,20 @@
         <h4 class="profession">
           Ex Associate Professional Software Engineer at DXC technology
         </h4>
-        <div class="view">
-          <a href="#view" class="link"> View my work</a>
-          <ion-icon name="arrow-down-outline"></ion-icon>
-        </div>
-      </div>
+        <button class="view btn--scroll-to">View my page &DownArrow;</button>
+       </div>
     </header>
 
     <!------------Aboutme section----------->
 
     <section class="aboutme-section" id="view">
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#home" class="nav-list">Home</a></li>
-          <li><a href="#view" class="nav-list">About</a></li>
-          <li><a href="#services" class="nav-list">Services</a></li>
-          <li><a href="#portfolio" class="nav-list">Portfolio</a></li>
-          <li><a href="#" class="nav-list">Contact</a></li>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#view" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
       <div id="aboutme">
@@ -163,18 +160,33 @@
 
 <!------------Contact section----------->
 
-   <!-- <div class="contact">
+   <div id="contact">
     <div class="container">
       <div class="row">
         <div class="contact-left">
           <h4>Contact Me</h4>
-          <p>contact@gmail.com</p>
-          <p>0123456789</p>
+          <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+          <p><i class="fa-solid fa-square-phone-flip"></i>0123456789</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
         </div>
-        <div class="contact-right"></div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
       </div>
     </div>
-   </div> -->
+  </div>
 
     <script
       type="module"
@@ -186,5 +198,5 @@
     ></script>
 
     <script defer src="script.js"></script>
-  </body>
+    </body>
 </html>
