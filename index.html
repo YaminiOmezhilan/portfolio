@@ -20,6 +20,21 @@
     <!------------ Header----------->
 
     <header class="header" id="home">
+    <div class="container">
+      <nav class="nav">
+        <img class="logo" src="./img/user.png">
+        <ul class="nav-links" id="sidemenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#view" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+           <i class="fas fa-times" onclick="closeMenu()"></i>
+
+        </ul>
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+      </nav>
+      </div>
       <div class="main-page">
         <h4 class="intro">Hi, I'm <span class="name">Yamini</span></h4>
         <h4 class="profession">
@@ -32,7 +47,7 @@
     <!------------Aboutme section----------->
 
     <section class="aboutme-section" id="view">
-      <nav class="nav">
+      <!-- <nav class="nav">
         <ul class="nav-links">
           <li><a href="#home" class="nav-link">Home</a></li>
           <li><a href="#view" class="nav-link">About</a></li>
@@ -40,7 +55,7 @@
           <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <div id="aboutme">
         <div class="container">
           <div class="row">
@@ -50,14 +65,7 @@
             <div class="about-col-2">
               <h5>About me</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                odit recusandae laborum illum earum quod eius, itaque, error sit
-                debitis, consequuntur fuga temporibus. Magni laudantium autem
-                recusandae laboriosam culpa officiis?Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Quos, tempore iure, praesentium
-                reiciendis velit alias culpa quas ducimus eligendi blanditiis
-                quia laudantium neque esse molestiae unde error. Ipsum, numquam
-                quis?
+                I'm a web developer with a focus on the frontend development, but still exploring other technologies and frameworks that catch my interest! if you're looking for a developer to add to your team, I'd love to hear from you!
               </p>
                 <div class="tab-titles">
                   <p class="tab-links active-link" data-tab="1">Skills</p>
@@ -66,15 +74,20 @@
                 </div>
                 <div class="tab-contents active__content--1 active-tab">
                   <ul>
-                    <li>VMWare ESXI</li>
-                    <li>Microsoft Azure</li>
-                    <li>VMware vSphere</li>
-                    <li>Javascript</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>ServiceNow</li>
-                    <li>PagerDuty</li>
-                    <li>GitHub</li>
+                   <li>VMWare</li> 
+                   <li>Microsoft Azure</li>
+                   <li>VMWare</li>
+                   <li>Javascript</li>
+                   <li>HTML5</li>
+                   <li>CSS3</li>
+                   <li>Git</li>
+                   <li>ReactJS</li>
+                   <li>Typescript</li>
+                   <li>Firebase</li>
+                   <li>Stripe API</li>
+                   <li>
+                    GraphQL
+                   </li>
                   </ul>
                 </div>
                 <div class="tab-contents active__content--2">
@@ -101,23 +114,15 @@
       <div class="container">
         <h5>My Services</h5>
         <div class="services-list">
-            <div>
-              <i class="fa-solid fa-code"></i>
-              <h2>Web Design</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, accusamus impedit sit error at obcaecati amet ea doloribus culpa, tempora veniam iusto doloremque quos libero aliquam ullam nobis placeat quia.</p>
-              <a href="#">Learn more</a>
+          <div>
+              <i class="fa-brands fa-app-store"></i>
+              <h2>Web Development</h2>
+              <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
             </div>
             <div>
               <i class="fa-solid fa-crop-simple"></i>
               <h2>UI/UX Design</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, accusamus impedit sit error at obcaecati amet ea doloribus culpa, tempora veniam iusto doloremque quos libero aliquam ullam nobis placeat quia.</p>
-              <a href="#">Learn more</a>
-            </div>
-            <div>
-              <i class="fa-brands fa-app-store"></i>
-              <h2>App Design</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, accusamus impedit sit error at obcaecati amet ea doloribus culpa, tempora veniam iusto doloremque quos libero aliquam ullam nobis placeat quia.</p>
-              <a href="#">Learn more</a>
+              <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
             </div>
         </div>
       </div>
@@ -127,29 +132,29 @@
 
     <div id="portfolio">
       <div class="container">
-        <h5>My Work</h5>
+        <h5>My Works</h5>
           <div class="work-list">
             <div class="work">
-              <img src="img/work-1.png"/>
+              <img src="img/fooddelivery.jpg"/>
               <div class="layer">
-                <h3>Social Media App</h3>
-                <p>The app connects you to the talented people around the world.Download it from the play store</p>
+                <h3>Online Food Delivery App</h3>
+                <p>Home page for the online food delivery app with HTML and CSS</p>
+                <a href="https://yaminiomezhilan.github.io/Omnifood/"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="img/rolodex.png"/>
+              <div class="layer">
+                <h3>Rolodex application</h3>
+                <p>Rolodex application helps in keeping contact records about the people</p>
                 <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
             <div class="work">
-              <img src="img/work-2.png"/>
+              <img src="img/ecommerce.png"/>
               <div class="layer">
-                <h3>Music App</h3>
-                <p>The app connects you to the talented people around the world.Download it from the play store</p>
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="img/work-3.png"/>
-              <div class="layer">
-                <h3>Online Shopping App</h3>
-                <p>The app connects you to the talented people around the world.Download it from the play store</p>
+                <h3>E-commerce Website</h3>
+                <p>E-commerce webpage that manages the customers to buy products developed with react library leveraged by firebase database and stripAPI.</p>
                 <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
@@ -165,13 +170,13 @@
       <div class="row">
         <div class="contact-left">
           <h4>Contact Me</h4>
-          <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+          <p><i class="fa-solid fa-paper-plane"></i>yaminicyr@gmail.com</p>
           <p><i class="fa-solid fa-square-phone-flip"></i>0123456789</p>
           <div class="social-icons">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-square-twitter"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/yamini-omezhilan-47a30a1a5/"><i class="fa-brands fa-linkedin"></i></a>
           </div>
           <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
         </div>
@@ -198,5 +203,15 @@
     ></script>
 
     <script defer src="script.js"></script>
+    <script>
+      const sideMenu = document.getElementById('sidemenu');
+
+      function openMenu() {
+        sideMenu.style.right = 0;
+      }
+       function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
     </body>
 </html>
