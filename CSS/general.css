@@ -22,7 +22,7 @@
 
     ---02-COLOUR
 
-    Primary:#ff004f
+    Primary:#F06292
     (light)Tints:
   
     (Dark)Shades:
@@ -70,19 +70,19 @@ body {
 .container {
   max-width: 160rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 h5 {
   font-weight: 600;
   font-size: 4rem;
-  color: #ff004f;
+  color: #f06292;
 }
 
 h4 {
   font-weight: 600;
   font-size: 4rem;
-  color: #ff004f;
+  color: #f06292;
 }
 
 p {
