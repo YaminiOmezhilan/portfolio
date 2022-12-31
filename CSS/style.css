@@ -52,7 +52,7 @@
 }
 
 .name {
-  color: #ff004f;
+  color: #f06292;
   display: inline-block;
 }
 
@@ -76,11 +76,74 @@
 /* Navigation */
 /******************************/
 
+/* NAVIGATION */
+
+.nav {
+  width: 100%;
+  z-index: 100;
+}
+
+/* nav and stickly class at the same time */
+.nav.sticky {
+  position: fixed;
+  background-color: #eee;
+}
+
+.nav.sticky .nav__link:link,
+.nav__link:visited {
+  color: #000;
+}
+
+.nav.sticky .nav__link:hover,
+.nav__link:active {
+  color: #f06292;
+}
+
+.nav__links {
+  float: right;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 2rem 3rem;
+}
+
+.nav__item {
+  margin-left: 4rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 1.7rem;
+  font-weight: 400;
+
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  color: #f06292;
+}
+
+nav .fas {
+  display: none;
+  color: white;
+}
+
+/* .nav {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
 nav ul li {
   list-style: none;
   gap: 3.2rem;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 30px 20px;
+  position: relative;
 }
 
 .nav-link:link,
@@ -90,29 +153,22 @@ nav ul li {
   font-weight: 400;
   font-size: 1.8rem;
   transition: all 0.3s;
+  padding-top: 3rem;
 }
 
 .nav-link:hover,
 .nav-link:active {
-  color: #ff004f;
+  color: #f06292;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
-nav .fas {
-  display: none;
-  color: white;
-}
+ */
 /******************************/
 /* Aboutme-section */
 /******************************/
 #aboutme {
-  padding: 3rem 0;
+  padding: 6rem 0;
+  margin: 2rem 0;
 }
 
 .row {
@@ -122,12 +178,13 @@ nav .fas {
 }
 
 .about-col-1 {
-  flex-basis: 35%;
+  flex-basis: 30%;
 }
 
 .about-col-1 img {
-  width: 100%;
-  height: 100%;
+  margin-top: 2rem;
+  width: 425px;
+  height: 520px;
   border-radius: 15px;
 }
 
@@ -137,7 +194,7 @@ nav .fas {
 
 .tab-titles {
   display: flex;
-  flex-grow: 1;
+
   margin: 3rem 0 3rem;
 }
 
@@ -153,7 +210,7 @@ nav .fas {
   content: "";
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #f06292;
   position: absolute;
   left: 0;
   bottom: -0.8rem;
@@ -193,7 +250,7 @@ nav .fas {
 /******************************/
 
 #services {
-  padding: 3rem 0;
+  padding: 7rem 0;
 }
 
 .services-list {
@@ -232,7 +289,7 @@ nav .fas {
 }
 
 .services-list div:hover {
-  background-image: linear-gradient(#ff004f, #ff99b9);
+  background-image: linear-gradient(#f06292, #ff99b9);
   transform: translateY(-10px);
 }
 
@@ -241,7 +298,7 @@ nav .fas {
 /******************************/
 
 #portfolio {
-  padding: 3rem 0;
+  padding: 7rem 0;
 }
 
 .work-list {
@@ -268,7 +325,7 @@ nav .fas {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(#00000099, #ff004f);
+  background: linear-gradient(#00000099, #f06292);
   border-radius: 1rem;
   position: absolute;
   left: 0;
@@ -292,7 +349,7 @@ nav .fas {
 
 .layer a {
   margin-top: 2rem;
-  color: #ff004f;
+  color: #f06292;
   text-decoration: none;
   font-size: 1.8rem;
   line-height: 5rem;
@@ -315,7 +372,7 @@ nav .fas {
   display: block;
   margin: 5rem auto;
   width: fit-content;
-  border: 2px solid #ff004f;
+  border: 2px solid #f06292;
   padding: 1.4rem 5rem;
   border-radius: 0.6rem;
   text-decoration: none;
@@ -324,7 +381,7 @@ nav .fas {
 }
 
 .btn:hover {
-  background: #ff004f;
+  background: #f06292;
 }
 
 /******************************/
@@ -332,7 +389,7 @@ nav .fas {
 /******************************/
 
 #contact {
-  padding: 3rem;
+  padding: 7rem;
 }
 
 .contact-left {
@@ -348,7 +405,7 @@ nav .fas {
 }
 
 .contact-left p i {
-  color: #ff004f;
+  color: #f06292;
   margin-right: 1.5rem;
   font-size: 2.5rem;
 }
@@ -373,7 +430,7 @@ nav .fas {
 
 .btn2 {
   display: inline-block;
-  background: #ff004f;
+  background: #f06292;
 }
 
 .contact-right form {
@@ -440,7 +497,16 @@ textarea::placeholder {
     font-size: 3rem;
   }
 
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 4rem 8rem 3rem;
+    align-items: flex-start;
+  }
+
   nav .fas {
+    float: right;
+    padding: 2rem;
     display: block;
     color: white;
     font-size: 25px;
@@ -459,6 +525,7 @@ textarea::placeholder {
 
   nav ul li {
     display: block;
+
     margin: 25px;
   }
   nav ul .fas {
@@ -467,9 +534,23 @@ textarea::placeholder {
     left: 25px;
     cursor: pointer;
   }
-  .about-col-1,
-  .about-col-2 {
+
+  .nav.sticky {
+    position: static;
+  }
+
+  #aboutme {
+    padding: 2rem 0;
+    margin: 0;
+  }
+
+  .about-col-1 .about-col-2 {
     flex-basis: 100%;
+  }
+
+  .about-col-1 img {
+    width: 350px;
+    height: 350px;
   }
 
   .about-col-2 {
@@ -477,7 +558,20 @@ textarea::placeholder {
   }
 
   .tab-contents {
-    width: 97%;
+    width: 95%;
+    padding: 4rem 2rem;
+  }
+
+  #services {
+    padding: 2rem 0;
+  }
+
+  #portfolio {
+    padding: 2rem 0;
+  }
+
+  #contact {
+    padding: 2rem 0;
   }
 
   .contact-left,
